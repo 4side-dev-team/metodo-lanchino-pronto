@@ -21,7 +21,46 @@ function toggleFaq(element) {
     }
 }
 
-// Contador regressivo
+// Contador regressivo dos planos - inicia em 1:35:33
+function startPlansCountdown() {
+    // Define o tempo inicial: 1 hora, 35 minutos e 33 segundos
+    const initialTime = (1 * 60 * 60) + (35 * 60) + 33; // em segundos
+    const now = new Date().getTime();
+    const countdownTime = now + (initialTime * 1000);
+    
+    const timer = setInterval(function() {
+        const now = new Date().getTime();
+        const distance = countdownTime - now;
+        
+        // Calcula horas, minutos e segundos
+        const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+        
+        // Atualiza o display dos planos
+        const plansHours = document.getElementById('plans-hours');
+        const plansMinutes = document.getElementById('plans-minutes');
+        const plansSeconds = document.getElementById('plans-seconds');
+        
+        if (plansHours && plansMinutes && plansSeconds) {
+            plansHours.textContent = hours.toString().padStart(2, '0');
+            plansMinutes.textContent = minutes.toString().padStart(2, '0');
+            plansSeconds.textContent = seconds.toString().padStart(2, '0');
+        }
+        
+        // Se o contador chegou a zero, para o timer
+        if (distance < 0) {
+            clearInterval(timer);
+            if (plansHours && plansMinutes && plansSeconds) {
+                plansHours.textContent = '00';
+                plansMinutes.textContent = '00';
+                plansSeconds.textContent = '00';
+            }
+        }
+    }, 1000);
+}
+
+// Contador regressivo do final da página
 function startCountdown() {
     // Define 24 horas a partir de agora
     const now = new Date().getTime();
@@ -36,17 +75,25 @@ function startCountdown() {
         const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
         const seconds = Math.floor((distance % (1000 * 60)) / 1000);
         
-        // Atualiza o display
-        document.getElementById('hours').textContent = hours.toString().padStart(2, '0');
-        document.getElementById('minutes').textContent = minutes.toString().padStart(2, '0');
-        document.getElementById('seconds').textContent = seconds.toString().padStart(2, '0');
+        // Atualiza o display do final da página
+        const finalHours = document.getElementById('hours');
+        const finalMinutes = document.getElementById('minutes');
+        const finalSeconds = document.getElementById('seconds');
+        
+        if (finalHours && finalMinutes && finalSeconds) {
+            finalHours.textContent = hours.toString().padStart(2, '0');
+            finalMinutes.textContent = minutes.toString().padStart(2, '0');
+            finalSeconds.textContent = seconds.toString().padStart(2, '0');
+        }
         
         // Se o contador chegou a zero, para o timer
         if (distance < 0) {
             clearInterval(timer);
-            document.getElementById('hours').textContent = '00';
-            document.getElementById('minutes').textContent = '00';
-            document.getElementById('seconds').textContent = '00';
+            if (finalHours && finalMinutes && finalSeconds) {
+                finalHours.textContent = '00';
+                finalMinutes.textContent = '00';
+                finalSeconds.textContent = '00';
+            }
         }
     }, 1000);
 }
@@ -380,3 +427,6 @@ function trackEvents() {
 
 // Inicializa a aplicação
 initializeApp();
+
+// Inicia o cronômetro dos planos quando a página carrega
+startPlansCountdown();
