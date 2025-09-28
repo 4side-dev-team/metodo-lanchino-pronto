@@ -50,3 +50,14 @@ Preferred communication style: Simple, everyday language.
 - **Modern Browser Support**: Utilizes CSS Grid, Flexbox, and ES6+ JavaScript features
 - **Progressive Enhancement**: Graceful degradation for older browsers
 - **Mobile Optimization**: Responsive design for cross-device compatibility
+
+# Recent Changes
+
+## September 28, 2025 - Author Section & Mobile Optimization
+- **Author Image**: Replaced icon with actual professor photo (Prof. Lucas Andrade)
+- **Image Styling**: Made author image perfectly round with border and shadow effects  
+- **Layout Optimization**: Reduced spacing and made elements more compact
+- **Mobile-First Design**: Improved mobile responsiveness with proper image stacking
+- **Size Reductions**: Compressed text sizes, padding, and element dimensions for better space utilization
+- **Bonus Section**: Reorganized bonus items - moved "Quiz de Matematica Divertido e Dinamico" to last position
+- **Text Updates**: Changed "100 Perguntas de Matemática" to "Quiz de Matematica Divertido e Dinamico"
