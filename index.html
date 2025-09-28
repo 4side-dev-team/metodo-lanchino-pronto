@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>+500 Dinâmicas Interativas de Matemática - Oferta Especial</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Topo com aviso de urgência -->
+    <div class="urgency-banner">
+        <div class="container">
+            <h2 class="urgency-text">🔥 DESCONTO SÓ HOJE NESSA PÁGINA 🔥</h2>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">+500 Dinâmicas Interativas de Matemática</h1>
+                <p class="hero-subtitle">Atividades lúdicas, divertidas e alinhadas à BNCC para transformar o ensino da matemática.</p>
+                <button class="cta-button hero-cta" onclick="scrollToPlans()">
+                    <i class="fas fa-rocket"></i> QUERO AGORA!
+                </button>
+                <div class="hero-badges">
+                    <div class="badge">✅ Alinhado à BNCC</div>
+                    <div class="badge">✅ Para Todas as Idades</div>
+                    <div class="badge">✅ Pronto para Usar</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- O Que Você Vai Receber -->
+    <section class="what-you-get">
+        <div class="container">
+            <h2 class="section-title">O Que Você Vai Receber</h2>
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <i class="fas fa-file-pdf benefit-icon"></i>
+                    <h3>Material Completo em PDF</h3>
+                    <p>+500 dinâmicas de matemática organizadas e prontas para usar</p>
+                </div>
+                <div class="benefit-card">
+                    <i class="fas fa-code benefit-icon"></i>
+                    <h3>Códigos da BNCC inclusos</h3>
+                    <p>Todas as atividades alinhadas com a Base Nacional Comum Curricular</p>
+                </div>
+                <div class="benefit-card">
+                    <i class="fas fa-mobile-alt benefit-icon"></i>
+                    <h3>Acesso Digital Completo</h3>
+                    <p>Acesse por celular, tablet ou computador a qualquer hora</p>
+                </div>
+                <div class="benefit-card">
+                    <i class="fas fa-print benefit-icon"></i>
+                    <h3>Pronto para Imprimir</h3>
+                    <p>Material formatado para impressão em qualquer tamanho</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefícios Exclusivos -->
+    <section class="exclusive-benefits">
+        <div class="container">
+            <h2 class="section-title">Benefícios Exclusivos</h2>
+            <div class="exclusive-grid">
+                <div class="exclusive-card">
+                    <i class="fas fa-users exclusive-icon"></i>
+                    <h3>Para Todas as Idades</h3>
+                    <p>Atividades adaptadas desde educação infantil até ensino médio</p>
+                </div>
+                <div class="exclusive-card">
+                    <i class="fas fa-check-circle exclusive-icon"></i>
+                    <h3>100% Compatível BNCC</h3>
+                    <p>Todas as dinâmicas seguem rigorosamente a Base Nacional</p>
+                </div>
+                <div class="exclusive-card">
+                    <i class="fas fa-sync-alt exclusive-icon"></i>
+                    <h3>Atualizações Mensais</h3>
+                    <p>Novas dinâmicas adicionadas todo mês sem custo extra</p>
+                </div>
+                <div class="exclusive-card">
+                    <i class="fas fa-gamepad exclusive-icon"></i>
+                    <h3>Aprendizado Divertido</h3>
+                    <p>Metodologia lúdica que engaja e motiva os alunos</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bônus Exclusivos -->
+    <section class="bonus-section">
+        <div class="container">
+            <h2 class="section-title">Bônus Exclusivos – Valor R$97 (Hoje Grátis!)</h2>
+            <div class="bonus-grid">
+                <div class="bonus-card">
+                    <div class="bonus-value">R$27</div>
+                    <i class="fas fa-certificate bonus-icon"></i>
+                    <h3>Certificado de Matemática</h3>
+                    <p>Certificado oficial para comprovar sua especialização</p>
+                </div>
+                <div class="bonus-card">
+                    <div class="bonus-value">R$37</div>
+                    <i class="fas fa-puzzle-piece bonus-icon"></i>
+                    <h3>Jogos Interativos de Matemática</h3>
+                    <p>Coleção completa de jogos digitais educativos</p>
+                </div>
+                <div class="bonus-card">
+                    <div class="bonus-value">R$33</div>
+                    <i class="fas fa-question-circle bonus-icon"></i>
+                    <h3>100 Perguntas de Matemática</h3>
+                    <p>Banco de questões para avaliações e exercícios</p>
+                </div>
+            </div>
+            <div class="total-bonus">
+                <h3>Total em Bônus: <span class="line-through">R$97</span> <span class="free">GRÁTIS HOJE!</span></h3>
+            </div>
+        </div>
+    </section>
+
+    <!-- Planos de Oferta -->
+    <section class="pricing-plans" id="plans">
+        <div class="container">
+            <h2 class="section-title">Escolha Seu Plano</h2>
+            <div class="plans-grid">
+                <div class="plan-card basic">
+                    <h3>Plano Básico</h3>
+                    <div class="price">
+                        <span class="old-price">R$97</span>
+                        <span class="new-price">R$10</span>
+                        <span class="period">pagamento único</span>
+                    </div>
+                    <ul class="plan-features">
+                        <li><i class="fas fa-check"></i> +500 Dinâmicas de Matemática</li>
+                        <li><i class="fas fa-check"></i> Códigos BNCC inclusos</li>
+                        <li><i class="fas fa-check"></i> Acesso digital</li>
+                        <li><i class="fas fa-check"></i> Pronto para imprimir</li>
+                    </ul>
+                    <button class="plan-button basic-button">ESCOLHER BÁSICO</button>
+                </div>
+                <div class="plan-card premium popular">
+                    <div class="popular-badge">MAIS POPULAR</div>
+                    <h3>Plano Premium</h3>
+                    <div class="price">
+                        <span class="old-price">R$256</span>
+                        <span class="new-price">R$27</span>
+                        <span class="period">pagamento único</span>
+                    </div>
+                    <ul class="plan-features">
+                        <li><i class="fas fa-check"></i> +500 Dinâmicas de Matemática</li>
+                        <li><i class="fas fa-check"></i> Códigos BNCC inclusos</li>
+                        <li><i class="fas fa-check"></i> Acesso digital</li>
+                        <li><i class="fas fa-check"></i> Pronto para imprimir</li>
+                        <li><i class="fas fa-star"></i> Todos os bônus (R$97)</li>
+                        <li><i class="fas fa-star"></i> Atualizações mensais</li>
+                        <li><i class="fas fa-star"></i> Suporte prioritário</li>
+                    </ul>
+                    <button class="plan-button premium-button">ESCOLHER PREMIUM</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Depoimentos -->
+    <section class="testimonials">
+        <div class="container">
+            <h2 class="section-title">O Que Nossos Clientes Dizem</h2>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="stars">★★★★★</div>
+                    <p>"As dinâmicas transformaram minhas aulas! Meus alunos nunca estiveram tão engajados com matemática. Material excepcional!"</p>
+                    <div class="testimonial-author">
+                        <i class="fas fa-user-circle"></i>
+                        <div>
+                            <strong>Prof. Ana Silva</strong>
+                            <span>Professora de Matemática - SP</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="stars">★★★★★</div>
+                    <p>"Meu filho sempre teve dificuldades em matemática. Com essas atividades, ele começou a gostar da matéria. Recomendo!"</p>
+                    <div class="testimonial-author">
+                        <i class="fas fa-user-circle"></i>
+                        <div>
+                            <strong>Carlos Santos</strong>
+                            <span>Pai de Aluno - RJ</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="stars">★★★★★</div>
+                    <p>"Implementamos na nossa escola e os resultados foram incríveis. Os professores adoraram e os alunos melhoraram muito!"</p>
+                    <div class="testimonial-author">
+                        <i class="fas fa-user-circle"></i>
+                        <div>
+                            <strong>Marisa Oliveira</strong>
+                            <span>Coordenadora Escolar - MG</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sobre o Autor -->
+    <section class="about-author">
+        <div class="container">
+            <div class="author-content">
+                <div class="author-info">
+                    <h2>Sobre o Autor</h2>
+                    <h3>Prof. Lucas Andrade</h3>
+                    <p class="author-title">Educador de Matemática Especialista</p>
+                    <div class="author-stats">
+                        <div class="stat">
+                            <strong>10+</strong>
+                            <span>Anos de Experiência</span>
+                        </div>
+                        <div class="stat">
+                            <strong>2.500+</strong>
+                            <span>Professores Formados</span>
+                        </div>
+                        <div class="stat">
+                            <strong>BNCC</strong>
+                            <span>Especialista Certificado</span>
+                        </div>
+                    </div>
+                    <p>"Dediquei minha carreira a tornar a matemática mais acessível e divertida. Essas dinâmicas são o resultado de anos de pesquisa e prática em sala de aula."</p>
+                </div>
+                <div class="author-image">
+                    <i class="fas fa-user-graduate"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="faq">
+        <div class="container">
+            <h2 class="section-title">Perguntas Frequentes</h2>
+            <div class="faq-list">
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <h3>Como acessar o material?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Após a compra, você receberá um link para download por email. O material estará disponível em PDF para acesso imediato.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <h3>É compatível com a BNCC?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Sim! Todas as 500+ dinâmicas foram desenvolvidas seguindo rigorosamente a Base Nacional Comum Curricular, com códigos específicos inclusos.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <h3>Posso usar em escola/curso?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Absolutamente! O material é licenciado para uso educacional em escolas, cursos e aulas particulares sem restrições.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <h3>Serve para qual idade?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>O material abrange desde educação infantil até ensino médio, com atividades adaptadas para cada faixa etária e nível de conhecimento.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <h3>Como funciona a garantia?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Oferecemos 7 dias de garantia total. Se não ficar satisfeito, devolvemos 100% do seu dinheiro sem perguntas.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Garantia -->
+    <section class="guarantee">
+        <div class="container">
+            <div class="guarantee-content">
+                <div class="guarantee-badge">
+                    <i class="fas fa-shield-alt"></i>
+                </div>
+                <h2>Garantia de 7 Dias</h2>
+                <p>Teste o material por 7 dias. Se não ficar satisfeito, devolvemos seu dinheiro sem complicação.</p>
+                <button class="cta-button guarantee-cta" onclick="scrollToPlans()">
+                    <i class="fas fa-lock"></i> COMPRAR COM SEGURANÇA
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Final de Urgência -->
+    <section class="final-urgency">
+        <div class="container">
+            <h2>Não perca esta oportunidade!</h2>
+            <p>Transforme o ensino da matemática com +500 dinâmicas interativas.</p>
+            <div class="urgency-timer">
+                <div class="timer-text">Oferta expira em:</div>
+                <div class="countdown" id="countdown">
+                    <div class="time-unit">
+                        <span class="time-number" id="hours">23</span>
+                        <span class="time-label">Horas</span>
+                    </div>
+                    <div class="time-unit">
+                        <span class="time-number" id="minutes">59</span>
+                        <span class="time-label">Min</span>
+                    </div>
+                    <div class="time-unit">
+                        <span class="time-number" id="seconds">59</span>
+                        <span class="time-label">Seg</span>
+                    </div>
+                </div>
+            </div>
+            <button class="cta-button final-cta" onclick="scrollToPlans()">
+                <i class="fas fa-bolt"></i> GARANTIR MINHA OFERTA AGORA!
+            </button>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Prof. Lucas Andrade. Todos os direitos reservados.</p>
+            <p>Material educacional licenciado para uso em escolas e cursos.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
