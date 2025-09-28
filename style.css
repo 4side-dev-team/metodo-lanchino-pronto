@@ -620,17 +620,20 @@ section {
 
 .author-stats {
     display: flex;
-    gap: 25px;
+    gap: 15px;
     margin: 25px 0;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 .stat {
     text-align: center;
-    padding: 15px 12px;
+    padding: 12px 10px;
     background: var(--light-gray);
     border-radius: 12px;
-    min-width: 100px;
+    min-width: 85px;
+    flex: 1;
+    max-width: 140px;
     transition: transform 0.3s ease;
 }
 
@@ -959,7 +962,13 @@ section {
     .author-stats {
         justify-content: center;
         flex-wrap: wrap;
-        gap: 20px;
+        gap: 12px;
+    }
+    
+    .stat {
+        min-width: 80px;
+        max-width: 120px;
+        padding: 10px 8px;
     }
     
     .hero-badges {

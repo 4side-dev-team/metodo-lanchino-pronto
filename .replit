@@ -18,18 +18,18 @@ args = "Server"
 name = "Server"
 author = "agent"
 
-[[workflows.workflow.tasks]]
-task = "shell.exec"
-args = "python -m http.server 5000 --bind 0.0.0.0"
-waitForPort = 5000
-
 [workflows.workflow.metadata]
 outputType = "webview"
+
+[[workflows.workflow.tasks]]
+task = "shell.exec"
+args = "python3 -m http.server 5000"
+waitForPort = 5000
 
 [[ports]]
 localPort = 5000
 externalPort = 80
 
 [[ports]]
-localPort = 41233
-externalPort = 3001
+localPort = 45257
+externalPort = 3000
