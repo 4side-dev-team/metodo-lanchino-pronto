@@ -894,6 +894,14 @@ section {
     background-clip: text;
 }
 
+.guarantee-logo {
+    width: 150px;
+    height: 150px;
+    object-fit: contain;
+    margin: 0 auto;
+    display: block;
+}
+
 .guarantee h2 {
     font-size: 2.8rem;
     margin-bottom: 20px;
