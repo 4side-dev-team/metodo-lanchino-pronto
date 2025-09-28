@@ -363,21 +363,23 @@ section {
 
 .plan-card {
     background: white;
-    padding: 40px 30px;
-    border-radius: 20px;
+    padding: 30px 25px;
+    border-radius: 12px;
     text-align: center;
     position: relative;
-    box-shadow: 0 5px 25px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
     transition: transform 0.3s ease;
+    border: 1px solid #e9ecef;
 }
 
 .plan-card:hover {
-    transform: translateY(-10px);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
 }
 
 .plan-card.popular {
-    border: 3px solid var(--primary-green);
-    transform: scale(1.05);
+    border: 2px solid var(--primary-green);
+    transform: none;
 }
 
 .popular-badge {
@@ -482,70 +484,29 @@ section {
 
 /* Premium Social Proof */
 .premium-social-proof {
-    background: linear-gradient(135deg, #28a745, #20c997);
-    color: white;
-    padding: 15px;
-    border-radius: 12px;
+    background: #f8f9fa;
+    color: #6c757d;
+    padding: 12px;
+    border-radius: 8px;
     margin-bottom: 20px;
     text-align: center;
+    border: 1px solid #e9ecef;
 }
 
 .purchase-count {
-    font-size: 1rem;
-    font-weight: 600;
-    margin-bottom: 8px;
-    color: #fff;
-}
-
-.savings {
-    font-size: 0.95rem;
+    font-size: 0.9rem;
+    font-weight: 500;
     margin: 0;
-    color: #f8f9fa;
+    color: #6c757d;
 }
 
-.savings strong {
-    color: #ffeb3b;
-    font-size: 1.1rem;
+/* Bonus Items */
+.bonus-item {
+    color: #fd7e14 !important;
 }
 
-/* Premium Exclusive Features */
-.premium-exclusive {
-    background: linear-gradient(135deg, rgba(255, 215, 0, 0.1), rgba(255, 193, 7, 0.1));
-    border: 2px solid #ffc107;
-    border-radius: 8px;
-    padding: 12px 15px !important;
-    margin: 8px 0 !important;
-    position: relative;
-    overflow: hidden;
-}
-
-.premium-exclusive::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 4px;
-    height: 100%;
-    background: linear-gradient(135deg, #ffc107, #ff9800);
-}
-
-.premium-exclusive i.fa-crown {
-    color: #ffc107 !important;
-    font-size: 1.2rem !important;
-    margin-right: 5px;
-}
-
-.exclusive-badge {
-    background: linear-gradient(135deg, #ffc107, #ff9800);
-    color: #333;
-    font-size: 0.7rem;
-    font-weight: 700;
-    padding: 2px 8px;
-    border-radius: 10px;
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
-    margin-right: 8px;
-    box-shadow: 0 2px 4px rgba(255, 193, 7, 0.3);
+.bonus-item i {
+    color: #fd7e14 !important;
 }
 
 /* Depoimentos */
