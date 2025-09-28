@@ -316,6 +316,27 @@ section {
     margin-bottom: 20px;
 }
 
+.bonus-image {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bonus-image img {
+    max-width: 100%;
+    width: 200px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.bonus-image img:hover {
+    transform: scale(1.05);
+}
+
 .bonus-card h3 {
     font-size: 1.3rem;
     font-weight: 600;
