@@ -269,9 +269,9 @@ section {
     padding: 45px 35px;
     border-radius: 24px;
     text-align: center;
-    box-shadow: 0 2px 15px rgba(0,0,0,0.05);
+    box-shadow: 0 2px 20px rgba(0,0,0,0.06);
     transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-    border: 2px solid transparent;
+    border: 1px solid rgba(0,0,0,0.04);
     position: relative;
     overflow: hidden;
 }
@@ -299,24 +299,24 @@ section {
 }
 
 .benefit-icon {
-    font-size: 2.5rem;
-    color: var(--primary-blue);
+    font-size: 2.8rem;
+    color: #007BFF;
     margin-bottom: 25px;
-    background: linear-gradient(135deg, rgba(0,123,255,0.08), rgba(0,180,216,0.08));
-    width: 75px;
-    height: 75px;
-    border-radius: 20px;
+    background: linear-gradient(135deg, rgba(0,123,255,0.12), rgba(59,130,246,0.12));
+    width: 85px;
+    height: 85px;
+    border-radius: 24px;
     display: inline-flex;
     align-items: center;
     justify-content: center;
     transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0 4px 20px rgba(0,123,255,0.08);
 }
 
 .benefit-card:hover .benefit-icon {
-    transform: translateY(-5px) scale(1.05);
-    background: linear-gradient(135deg, var(--primary-blue), #0056b3);
-    color: white;
-    box-shadow: 0 10px 30px rgba(0,123,255,0.25);
+    transform: translateY(-5px) scale(1.08);
+    background: linear-gradient(135deg, rgba(0,123,255,0.18), rgba(59,130,246,0.18));
+    box-shadow: 0 8px 30px rgba(0,123,255,0.2);
 }
 
 .benefit-card h3 {
@@ -359,8 +359,8 @@ section {
     border-radius: 24px;
     transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
     background: #ffffff;
-    box-shadow: 0 2px 15px rgba(0,0,0,0.05);
-    border: 2px solid transparent;
+    box-shadow: 0 2px 20px rgba(0,0,0,0.06);
+    border: 1px solid rgba(0,0,0,0.04);
     position: relative;
     overflow: hidden;
 }
@@ -388,24 +388,24 @@ section {
 }
 
 .exclusive-icon {
-    font-size: 2.5rem;
-    color: var(--primary-green);
+    font-size: 2.8rem;
+    color: #28A745;
     margin-bottom: 25px;
-    background: linear-gradient(135deg, rgba(40,167,69,0.08), rgba(16,185,129,0.08));
-    width: 75px;
-    height: 75px;
-    border-radius: 20px;
+    background: linear-gradient(135deg, rgba(40,167,69,0.12), rgba(34,197,94,0.12));
+    width: 85px;
+    height: 85px;
+    border-radius: 24px;
     display: inline-flex;
     align-items: center;
     justify-content: center;
     transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0 4px 20px rgba(40,167,69,0.08);
 }
 
 .exclusive-card:hover .exclusive-icon {
-    transform: translateY(-5px) scale(1.05);
-    background: linear-gradient(135deg, var(--primary-green), #1e7e34);
-    color: white;
-    box-shadow: 0 10px 30px rgba(40,167,69,0.25);
+    transform: translateY(-5px) scale(1.08);
+    background: linear-gradient(135deg, rgba(40,167,69,0.18), rgba(34,197,94,0.18));
+    box-shadow: 0 8px 30px rgba(40,167,69,0.2);
 }
 
 .exclusive-card h3 {
