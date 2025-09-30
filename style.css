@@ -293,6 +293,15 @@ section {
     justify-content: center;
     transition: all 0.3s ease;
     box-shadow: 0 4px 15px rgba(74,144,226,0.3);
+    line-height: 1;
+    position: relative;
+}
+
+.benefit-icon::before {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .benefit-card:hover .benefit-icon {
@@ -363,6 +372,15 @@ section {
     justify-content: center;
     transition: all 0.3s ease;
     box-shadow: 0 4px 15px rgba(82,183,136,0.3);
+    line-height: 1;
+    position: relative;
+}
+
+.exclusive-icon::before {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .exclusive-card:hover .exclusive-icon {
