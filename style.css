@@ -80,7 +80,6 @@ body {
 .urgency-text {
     font-size: 1.2rem;
     font-weight: 700;
-    animation: pulse 2s infinite;
     text-transform: uppercase;
     letter-spacing: 1px;
 }
