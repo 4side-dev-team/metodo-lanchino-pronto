@@ -171,7 +171,7 @@ function addPlanButtonEffects() {
             } else if (this.classList.contains('premium-button')) {
                 // Redireciona para o checkout premium
                 setTimeout(() => {
-                    window.location.href = 'https://checkout.dinamicasdivertida.site/VCCL1O8SCBJI';
+                    window.location.href = 'https://checkout.dinamicasdeportugues.site/VCCL1O8SCB1B';
                 }, 300);
             }
         });
@@ -509,15 +509,15 @@ document.addEventListener('DOMContentLoaded', function() {
     // Botão de aceitar upgrade - redireciona para premium com desconto
     if (acceptBtn) {
         acceptBtn.addEventListener('click', function() {
-            // Redireciona para checkout premium (você pode usar um link específico para o desconto de R$17)
-            window.location.href = 'https://checkout.dinamicasdivertida.site/VCCL1O8SCBJI';
+            // Redireciona para checkout premium com desconto de R$17
+            window.location.href = 'https://checkout.dinamicasdeportugues.site/VCCL1O8SCB1C';
         });
     }
     
     // Botão de declinar - redireciona para checkout básico
     if (declineBtn) {
         declineBtn.addEventListener('click', function() {
-            window.location.href = 'https://checkout.dinamicasdivertida.site/VCCL1O8SCBJ0';
+            window.location.href = 'https://checkout.dinamicasdeportugues.site/VCCL1O8SCB17';
         });
     }
     
