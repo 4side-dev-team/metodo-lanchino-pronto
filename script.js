@@ -484,4 +484,4 @@ initializeApp();
 startPlansCountdown();
 
 // Inicia o sistema de notificações
-// startNotificationSystem();
+startNotificationSystem();
