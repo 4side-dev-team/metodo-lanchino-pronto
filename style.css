@@ -1688,14 +1688,15 @@ html {
 .notification-icon {
     width: 32px;
     height: 32px;
-    background: var(--primary-green);
-    border-radius: 8px;
+    background: linear-gradient(135deg, #22c55e 0%, #16a34a 100%);
+    border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 1.1rem;
+    font-size: 1rem;
     flex-shrink: 0;
     margin-right: 10px;
+    box-shadow: 0 2px 8px rgba(34, 197, 94, 0.3);
 }
 
 @media (max-width: 768px) {
@@ -1715,8 +1716,9 @@ html {
     .notification-icon {
         width: 24px;
         height: 24px;
-        font-size: 0.9rem;
+        font-size: 0.8rem;
         margin-right: 8px;
+        box-shadow: 0 1px 4px rgba(34, 197, 94, 0.25);
     }
 
     .notification-name {
