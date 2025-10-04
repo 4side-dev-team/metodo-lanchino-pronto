@@ -1621,13 +1621,13 @@ html {
     display: flex;
     flex-direction: column;
     gap: 15px;
-    max-width: 200px;
+    max-width: 180px;
     pointer-events: none;
 }
 
 .notification {
     background: white;
-    padding: 6px 6px;
+    padding: 8px 10px;
     border-radius: 12px;
     box-shadow: 0 4px 20px rgba(0,0,0,0.15);
     display: flex;
@@ -1663,25 +1663,26 @@ html {
     flex: 1;
     display: flex;
     flex-direction: column;
-    gap: 0px;
+    gap: 2px;
 }
 
 .notification-name {
     font-weight: 700;
-    font-size: 1rem;
+    font-size: 0.95rem;
     color: #1a1a1a;
+    line-height: 1.2;
 }
 
 .notification-product {
-    font-size: 0.88rem;
+    font-size: 0.82rem;
     color: #666;
-    line-height: 1.3;
+    line-height: 1.2;
 }
 
 .notification-location {
-    font-size: 0.8rem;
+    font-size: 0.75rem;
     color: #999;
-    line-height: 1.3;
+    line-height: 1.2;
 }
 
 @media (max-width: 768px) {
