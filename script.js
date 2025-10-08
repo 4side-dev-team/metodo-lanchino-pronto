@@ -171,7 +171,7 @@ function addPlanButtonEffects() {
             } else if (this.classList.contains('premium-button')) {
                 // Redireciona para o checkout premium
                 setTimeout(() => {
-                    window.location.href = 'https://checkout.dinamicasdeportugues.site/VCCL1O8SCB1B';
+                    window.location.href = 'https://checkout.dinamicasdeingles.site/VCCL1O8SCCDT';
                 }, 300);
             }
         });
@@ -510,14 +510,14 @@ document.addEventListener('DOMContentLoaded', function() {
     if (acceptBtn) {
         acceptBtn.addEventListener('click', function() {
             // Redireciona para checkout premium com desconto de R$17
-            window.location.href = 'https://checkout.dinamicasdeportugues.site/VCCL1O8SCB1C';
+            window.location.href = 'https://checkout.dinamicasdeingles.site/VCCL1O8SCCDU';
         });
     }
     
     // Botão de declinar - redireciona para checkout básico
     if (declineBtn) {
         declineBtn.addEventListener('click', function() {
-            window.location.href = 'https://checkout.dinamicasdeportugues.site/VCCL1O8SCB17';
+            window.location.href = 'https://checkout.dinamicasdeingles.site/VCCL1O8SCCDO';
         });
     }
     
