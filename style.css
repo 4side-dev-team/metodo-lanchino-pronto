@@ -190,6 +190,10 @@ body {
     background: #000;
 }
 
+.video-card iframe {
+    border-radius: 12px;
+}
+
 .play-overlay {
     position: absolute;
     top: 0;
