@@ -539,24 +539,37 @@ function setupVideoPlayer() {
     
     if (!video || !playButton || !videoContainer) return;
     
-    function toggleVideo() {
-        if (video.paused) {
-            video.play();
+    function playVideo() {
+        video.muted = false;
+        video.play().then(function() {
             playButton.classList.add('hidden');
+        }).catch(function(error) {
+            console.log('Erro ao reproduzir:', error);
+            video.muted = true;
+            video.play().then(function() {
+                playButton.classList.add('hidden');
+            });
+        });
+    }
+    
+    function pauseVideo() {
+        video.pause();
+        playButton.classList.remove('hidden');
+    }
+    
+    function toggleVideo(e) {
+        e.preventDefault();
+        e.stopPropagation();
+        
+        if (video.paused) {
+            playVideo();
         } else {
-            video.pause();
-            playButton.classList.remove('hidden');
+            pauseVideo();
         }
     }
     
-    playButton.addEventListener('click', function(e) {
-        e.stopPropagation();
-        toggleVideo();
-    });
-    
-    videoContainer.addEventListener('click', function() {
-        toggleVideo();
-    });
+    playButton.addEventListener('click', toggleVideo);
+    video.addEventListener('click', toggleVideo);
     
     video.addEventListener('ended', function() {
         playButton.classList.remove('hidden');
