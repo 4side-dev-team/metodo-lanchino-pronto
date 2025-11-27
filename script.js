@@ -531,45 +531,66 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 });
 
-// Controle do vídeo - Sem controles, apenas clique para pausar/continuar
+// Controle do vídeo - Card escuro com play overlay
 function setupVideoPlayer() {
     const video = document.getElementById('hero-video');
-    const videoHint = document.querySelector('.video-hint');
+    const poster = document.getElementById('video-poster');
+    const playOverlay = document.getElementById('play-overlay');
+    const videoContainer = document.getElementById('video-container');
+    const caption = document.querySelector('.video-caption');
     
-    if (!video) return;
+    if (!video || !playOverlay) return;
     
-    // Pré-carrega o vídeo agressivamente em segundo plano
+    // Pré-carrega o vídeo em segundo plano
     video.preload = 'auto';
+    video.load();
     
-    // Força o download do vídeo em segundo plano
-    fetch(video.querySelector('source').src)
-        .then(function(response) {
-            return response.blob();
-        })
-        .then(function(blob) {
-            var videoUrl = URL.createObjectURL(blob);
-            video.src = videoUrl;
-            video.load();
-        })
-        .catch(function() {
-            // Se falhar, usa o método normal
-            video.load();
+    function playVideo() {
+        // Mostra o vídeo e esconde o poster
+        if (poster) poster.style.display = 'none';
+        video.style.display = 'block';
+        playOverlay.classList.add('hidden');
+        if (caption) caption.textContent = 'Clique para pausar';
+        
+        video.play().catch(function() {
+            // Se falhar, tenta com mudo
+            video.muted = true;
+            video.play();
         });
+    }
     
-    // Clique no vídeo para pausar/continuar
+    function pauseVideo() {
+        video.pause();
+        playOverlay.classList.remove('hidden');
+        if (caption) caption.textContent = 'Clique para continuar';
+    }
+    
+    function resetVideo() {
+        video.style.display = 'none';
+        if (poster) poster.style.display = 'block';
+        playOverlay.classList.remove('hidden');
+        if (caption) caption.textContent = 'Clique para assistir';
+        video.currentTime = 0;
+    }
+    
+    // Clique no overlay para iniciar
+    playOverlay.addEventListener('click', function(e) {
+        e.stopPropagation();
+        playVideo();
+    });
+    
+    // Clique no vídeo para pausar
     video.addEventListener('click', function() {
         if (video.paused) {
-            video.play();
-            if (videoHint) videoHint.style.display = 'none';
+            playVideo();
         } else {
-            video.pause();
-            if (videoHint) videoHint.style.display = 'block';
+            pauseVideo();
         }
     });
     
-    // Quando o vídeo terminar, mostra o aviso novamente
+    // Quando o vídeo terminar
     video.addEventListener('ended', function() {
-        if (videoHint) videoHint.style.display = 'block';
+        resetVideo();
     });
 }
 
