@@ -165,6 +165,7 @@ body {
     margin: 0 auto 40px;
     border-radius: 15px;
     box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    cursor: pointer;
 }
 
 .video-wrapper video {
@@ -172,6 +173,40 @@ body {
     height: auto;
     border-radius: 15px;
     display: block;
+}
+
+.play-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 70px;
+    height: 70px;
+    background: #e53935;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 20px rgba(229, 57, 53, 0.5);
+    z-index: 10;
+}
+
+.play-button i {
+    color: white;
+    font-size: 28px;
+    margin-left: 5px;
+}
+
+.play-button:hover {
+    transform: translate(-50%, -50%) scale(1.1);
+    box-shadow: 0 6px 25px rgba(229, 57, 53, 0.7);
+}
+
+.play-button.hidden {
+    opacity: 0;
+    pointer-events: none;
 }
 
 .video-wrapper iframe {

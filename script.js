@@ -531,6 +531,38 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 });
 
+// Controle do vídeo customizado
+function setupVideoPlayer() {
+    const video = document.getElementById('hero-video');
+    const playButton = document.getElementById('play-button');
+    const videoContainer = document.getElementById('video-container');
+    
+    if (!video || !playButton || !videoContainer) return;
+    
+    function toggleVideo() {
+        if (video.paused) {
+            video.play();
+            playButton.classList.add('hidden');
+        } else {
+            video.pause();
+            playButton.classList.remove('hidden');
+        }
+    }
+    
+    playButton.addEventListener('click', function(e) {
+        e.stopPropagation();
+        toggleVideo();
+    });
+    
+    videoContainer.addEventListener('click', function() {
+        toggleVideo();
+    });
+    
+    video.addEventListener('ended', function() {
+        playButton.classList.remove('hidden');
+    });
+}
+
 // Inicializa a aplicação
 initializeApp();
 
@@ -539,3 +571,6 @@ startPlansCountdown();
 
 // Inicia o sistema de notificações
 startNotificationSystem();
+
+// Configura o player de vídeo customizado
+document.addEventListener('DOMContentLoaded', setupVideoPlayer);

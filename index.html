@@ -38,12 +38,15 @@
                 <h1 class="hero-title"><span class="number-500">70 Dinâmicas</span> para Criar Aulas de Yoga Mais <span class="number-500">Vivas</span>, <span class="number-500">Criativas</span> e <span class="number-500">Profundas</span> <span class="bonus-text">+Bônus</span></h1>
                 <p class="hero-subtitle"><strong>Tenha acesso</strong> a dinâmicas <strong>transformadoras</strong>, <strong>relaxantes</strong> e <strong>energizantes</strong> para levar bem-estar e equilíbrio aos seus <strong>alunos</strong> e <strong>clientes</strong>.</p>
                 
-                <div class="video-wrapper">
-                    <video controls playsinline style="width:100%;border-radius:15px;">
+                <div class="video-wrapper" id="video-container">
+                    <video id="hero-video" playsinline muted style="width:100%;border-radius:15px;">
                         <source src="video.mov" type="video/quicktime">
                         <source src="video.mov" type="video/mp4">
                         Seu navegador não suporta vídeo.
                     </video>
+                    <div class="play-button" id="play-button">
+                        <i class="fas fa-play"></i>
+                    </div>
                 </div>
                 
                 <button class="cta-button hero-cta" onclick="scrollToPlans()">
