@@ -854,6 +854,25 @@ section {
     color: #A855F7 !important;
 }
 
+/* No Benefit Item */
+.no-benefit {
+    color: #DC2626 !important;
+}
+
+.no-benefit i {
+    color: #DC2626 !important;
+}
+
+/* Gold Item */
+.gold-item {
+    color: #D4A000 !important;
+    font-weight: 600;
+}
+
+.gold-item i {
+    color: #D4A000 !important;
+}
+
 /* Depoimentos */
 .testimonials {
     background: var(--light-gray);
