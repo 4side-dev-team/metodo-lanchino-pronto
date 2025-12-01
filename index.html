@@ -417,20 +417,5 @@
     </div>
 
     <script src="script.js"></script>
-    <script>
-        (function() {
-            var backRedirectTriggered = false;
-            
-            history.pushState(null, null, location.href);
-            history.pushState(null, null, location.href);
-            
-            window.addEventListener('popstate', function(event) {
-                if (!backRedirectTriggered) {
-                    backRedirectTriggered = true;
-                    window.location.href = 'backredirect.html';
-                }
-            });
-        })();
-    </script>
 </body>
 </html>
