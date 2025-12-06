@@ -168,11 +168,6 @@ function addPlanButtonEffects() {
                 setTimeout(() => {
                     showUpgradePopup();
                 }, 400);
-            } else if (this.classList.contains('premium-button')) {
-                // Redireciona para o checkout premium com desconto
-                setTimeout(() => {
-                    window.location.href = 'https://checkout.dinamicasincriveis.shop/VCCL1O8SCCDT';
-                }, 300);
             }
         });
     });
