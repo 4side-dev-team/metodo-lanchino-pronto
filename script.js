@@ -446,11 +446,11 @@ function trackEvents() {
 
 // Sistema de Notificações
 const notificationMessages = [
-    { name: 'João P.', product: 'Plano Premium', location: 'Belo Horizonte, MG', time: 'há 2 minutos' },
-    { name: 'Maria S.', product: 'Plano Premium', location: 'São Paulo, SP', time: 'há 5 minutos' },
-    { name: 'Ana C.', product: 'Plano Premium', location: 'Salvador, BA', time: 'há 8 minutos' },
-    { name: 'Pedro L.', product: 'Plano Premium', location: 'Brasília, DF', time: 'há 12 minutos' },
-    { name: 'Fernanda M.', product: 'Plano Premium', location: 'Rio de Janeiro, RJ', time: 'há 15 minutos' }
+    { name: 'Juan P.', product: 'Plan Premium', location: 'Ciudad de México, MX', time: 'hace 2 minutos' },
+    { name: 'María S.', product: 'Plan Premium', location: 'Buenos Aires, AR', time: 'hace 5 minutos' },
+    { name: 'Ana C.', product: 'Plan Premium', location: 'Bogotá, CO', time: 'hace 8 minutos' },
+    { name: 'Pedro L.', product: 'Plan Premium', location: 'Santiago, CL', time: 'hace 12 minutos' },
+    { name: 'Fernanda M.', product: 'Plan Premium', location: 'Lima, PE', time: 'hace 15 minutos' }
 ];
 
 let notificationIndex = 0;
@@ -466,7 +466,7 @@ function createNotification(notification) {
         <div class="notification-icon">✓</div>
         <div class="notification-content">
             <div class="notification-name">${notification.name}</div>
-            <div class="notification-product">Comprou: ${notification.product}</div>
+            <div class="notification-product">Compró: ${notification.product}</div>
             <div class="notification-location">${notification.location} - ${notification.time}</div>
         </div>
     `;
@@ -541,7 +541,7 @@ function setupVideoPlayer() {
     
     function playVideo() {
         playOverlay.classList.add('hidden');
-        if (caption) caption.textContent = 'Clique para pausar';
+        if (caption) caption.textContent = 'Haz clic para pausar';
         
         video.play().catch(function() {
             video.muted = true;
@@ -552,12 +552,12 @@ function setupVideoPlayer() {
     function pauseVideo() {
         video.pause();
         playOverlay.classList.remove('hidden');
-        if (caption) caption.textContent = 'Clique para continuar';
+        if (caption) caption.textContent = 'Haz clic para continuar';
     }
     
     function resetVideo() {
         playOverlay.classList.remove('hidden');
-        if (caption) caption.textContent = 'Clique para assistir';
+        if (caption) caption.textContent = 'Haz clic para ver';
         video.currentTime = 0;
     }
     
