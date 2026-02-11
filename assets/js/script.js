@@ -540,6 +540,8 @@ function showUpgradePopup(event) {
         popup.classList.add('active');
         document.body.style.overflow = 'hidden';
     }
+
+    return false;
 }
 
 function hideUpgradePopup() {
