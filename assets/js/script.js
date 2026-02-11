@@ -135,7 +135,15 @@ function addPlanButtonEffects() {
     
     planButtons.forEach(button => {
         button.addEventListener('click', function(e) {
-            e.preventDefault();
+            const href = this.getAttribute('href') || '';
+            const hasCheckoutLink = href && href !== '#';
+            const isBasicButton = this.classList.contains('basic-button');
+
+            // Bloqueia navegação apenas quando necessário:
+            // 1) botão básico (fluxo de popup) ou 2) botão sem link real.
+            if (isBasicButton || !hasCheckoutLink) {
+                e.preventDefault();
+            }
             
             // Cria efeito de ripple
             const ripple = document.createElement('span');
@@ -164,7 +172,7 @@ function addPlanButtonEffects() {
             }, 600);
             
             // Se for botão básico, mostra o pop-up de upgrade
-            if (this.classList.contains('basic-button')) {
+            if (isBasicButton) {
                 setTimeout(() => {
                     showUpgradePopup();
                 }, 400);
