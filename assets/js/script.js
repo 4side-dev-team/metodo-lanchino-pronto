@@ -449,11 +449,11 @@ const NOTIFICATION_I18N = {
     es: {
         purchaseLabel: 'Compró',
         messages: [
-            { name: 'Juan P.', product: 'Plan Premium', location: 'Ciudad de México, MX', time: 'hace 2 minutos' },
-            { name: 'María S.', product: 'Plan Premium', location: 'Buenos Aires, AR', time: 'hace 5 minutos' },
-            { name: 'Ana C.', product: 'Plan Premium', location: 'Bogotá, CO', time: 'hace 8 minutos' },
-            { name: 'Pedro L.', product: 'Plan Premium', location: 'Santiago, CL', time: 'hace 12 minutos' },
-            { name: 'Fernanda M.', product: 'Plan Premium', location: 'Lima, PE', time: 'hace 15 minutos' }
+            { name: 'Juan P.', product: 'Oferta Única', location: 'Ciudad de México, MX', time: 'hace 2 minutos' },
+            { name: 'María S.', product: 'Oferta Única', location: 'Buenos Aires, AR', time: 'hace 5 minutos' },
+            { name: 'Ana C.', product: 'Oferta Única', location: 'Bogotá, CO', time: 'hace 8 minutos' },
+            { name: 'Pedro L.', product: 'Oferta Única', location: 'Santiago, CL', time: 'hace 12 minutos' },
+            { name: 'Fernanda M.', product: 'Oferta Única', location: 'Lima, PE', time: 'hace 15 minutos' }
         ]
     },
     pt: {
