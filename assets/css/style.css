@@ -580,15 +580,29 @@ section {
 }
 
 .total-bonus {
+    display: block;
     text-align: center;
     padding: 18px 25px;
     background: linear-gradient(135deg, #10B981 0%, #059669 100%);
     color: white;
+    text-decoration: none;
     border-radius: 12px;
     font-size: 1rem;
     max-width: 500px;
     margin: 0 auto;
     box-shadow: 0 4px 15px rgba(16, 185, 129, 0.4);
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.total-bonus:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 24px rgba(16, 185, 129, 0.45);
+}
+
+.total-bonus:focus-visible {
+    outline: 3px solid rgba(255, 255, 255, 0.85);
+    outline-offset: 2px;
 }
 
 .total-bonus h3 {
