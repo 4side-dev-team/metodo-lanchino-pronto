@@ -20,7 +20,7 @@
     },
     {
       "source": "/br",
-      "destination": "/br/index.html"
+      "destination": "/index.html"
     }
   ]
 }
