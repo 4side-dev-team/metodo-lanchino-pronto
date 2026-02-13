@@ -467,11 +467,11 @@ const NOTIFICATION_I18N = {
     pt: {
         purchaseLabel: 'Comprou',
         messages: [
-            { name: 'Juliana R.', product: 'Plano Premium', location: 'Sao Paulo, SP', time: 'ha 2 minutos' },
-            { name: 'Carla M.', product: 'Plano Premium', location: 'Rio de Janeiro, RJ', time: 'ha 5 minutos' },
-            { name: 'Patricia A.', product: 'Plano Premium', location: 'Belo Horizonte, MG', time: 'ha 8 minutos' },
-            { name: 'Renata L.', product: 'Plano Premium', location: 'Curitiba, PR', time: 'ha 12 minutos' },
-            { name: 'Fernanda S.', product: 'Plano Premium', location: 'Porto Alegre, RS', time: 'ha 15 minutos' }
+            { name: 'Juliana R.', product: 'Metodo Lancheira Pronta', location: 'Sao Paulo, SP', time: 'ha 2 minutos' },
+            { name: 'Carla M.', product: 'Metodo Lancheira Pronta', location: 'Rio de Janeiro, RJ', time: 'ha 5 minutos' },
+            { name: 'Patricia A.', product: 'Metodo Lancheira Pronta', location: 'Belo Horizonte, MG', time: 'ha 8 minutos' },
+            { name: 'Renata L.', product: 'Metodo Lancheira Pronta', location: 'Curitiba, PR', time: 'ha 12 minutos' },
+            { name: 'Fernanda S.', product: 'Metodo Lancheira Pronta', location: 'Porto Alegre, RS', time: 'ha 15 minutos' }
         ]
     }
 };
